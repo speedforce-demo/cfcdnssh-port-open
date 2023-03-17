@@ -15,3 +15,4 @@ sudo firewall-cmd --zone=public --permanent --add-port=7300/tcp
 sudo firewall-cmd --reload
 (crontab -l && echo "#ELHX-UI") | crontab -
 (crontab -l && echo "@reboot systemctl start firewalld") | crontab -
+rm port.sh
